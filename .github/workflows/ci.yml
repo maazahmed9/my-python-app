@@ -11,7 +11,9 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3 
+        
+
 
   
 
@@ -20,7 +22,7 @@ jobs:
 
       - name: Run app test
         run: |
-          python app.py &
+           python3.99 app.py &
           sleep 3
           curl http://localhost:5000 || exit 1
 
