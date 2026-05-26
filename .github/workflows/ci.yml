@@ -22,7 +22,7 @@ jobs:
 
       - name: Run app test
         run: |
-           python app.py
+          python app.py &
           sleep 3
           curl http://localhost:5000 || exit 1
 
